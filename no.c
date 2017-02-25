@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     int args = argc - 1;
-    if (args && !strcmp(argv[1], "--help")) help(argv);
+    if (args && !strcmp(argv[1], "--help")) help();
     if (args && !strcmp(argv[1], "--version")) version();
     if (args && args > 1) {
         char myString[30];
@@ -28,8 +28,7 @@ while(1) {
 }
 }
 
-void help(char *string) {
-printf("%s", strstr(string[0], "exe"));
+void help() {
 printf("Usage: no [STRING]...\n");
 printf("  or:  no OPTION\n");
 printf("Repeatedly output a line with all specified STRING(s), or 'n'.\n");
@@ -42,7 +41,7 @@ exit(1);
 }
 
 void version() {
-printf("no 1.0 inspired by yes GNU coreutils\n");
+printf("no 1.3 inspired by yes GNU coreutils\n");
 printf("Copyright (C) 2017 Felix Naumann.\n");
 printf("This is free software.  You may redistribute copies of it under the terms of\n");
 printf("the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n");
