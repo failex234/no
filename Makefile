@@ -2,7 +2,7 @@ PREFIX = /usr
 
 all:
 	make clean
-	gcc -o no -std=c99 no.c
+	g++ -o no no.cpp
 	@echo Now run \'make install\'
 
 install:
