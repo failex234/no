@@ -5,9 +5,13 @@
 using namespace std;
 
 string firstletter = "";
+const string AUTHOR = "Felix Naumann"
 
 /*
 * Remove the dot and slash from the program name
+* maybe I will rework this method if anybody would
+* want to compile this code under windows so that it
+* works as intented on Windows
 */
 string shortenName(char prgname[]) {
     char newName[strlen(prgname)];
@@ -39,12 +43,12 @@ void help(char prgname[]) {
 void version(char prgname[]) {
 string shortenedName = shortenName(prgname);
     cout << shortenedName << " 1.4 C++ Edition inspired by yes GNU coreutils\n";
-    cout << "Copyright (C) 2017 Felix Naumann.\n";
+    cout << "Copyright (C) 2017 " << AUTHOR << ".\n";
     cout << "This is free software.  You may redistribute copies of it under the terms of\n";
     cout << "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n";
     cout << "There is NO WARRANTY, to the extent permitted by law.\n";
     cout << "\n";
-    cout << "Written by Felix Naumann.\n";
+    cout << "Written by " << AUTHOR << ".\n";
 }
 
 void print(string text) {
