@@ -26,6 +26,7 @@ string shortenName(char prgname[]) {
         }
         
     }
+    if (!strcmp(newName,"")) newName = "no";
     return newName;
 }
 
