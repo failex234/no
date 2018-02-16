@@ -1,8 +1,10 @@
 PREFIX = /usr
+CC=gcc
+CC_FLAGS=-Wall
 
 all:
 	make clean
-	g++ -o no no.cpp
+	$(CC) $(CC_FLAGS) -o no no.c
 	@echo Now run \'make install\'
 
 install:

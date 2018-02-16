@@ -1,8 +1,7 @@
 # no
 Little program that has the same functionality as yes from GNU Coreutils
 
-I reworked the whole program in C++ and now it works as originally 
-intended!
+I wrote the program in C then switched to C++ and now back to C...
 
 ## Disclaimer
 This program is nothing to get excited about, just a simple fun project.
